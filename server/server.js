@@ -2,15 +2,16 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-const port = 5000;
+const port = process.env.PORT;
 
 //use middleware
 app.use(cors());
 app.use(express.json());
 
-//mongodb connection
-const conn = mongoose.connect(DATABASE_URL);
+//mongodb connection(mock url)
+const conn = mongoose.connect(process.env.DB_URL);
 conn
   .then(() => {
     console.log("Database Connected");

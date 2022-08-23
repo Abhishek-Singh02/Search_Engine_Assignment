@@ -8,6 +8,7 @@ const SEARCH_API_URL = "http://localhost:5000/api/search"; // you should replace
 const App = () => {
   const [ads, setAds] = useState([]);
 
+  //fetch data
   const search = async (searchValue) => {
     const response = await fetch(`${SEARCH_API_URL}`, {
       method: "POST",
