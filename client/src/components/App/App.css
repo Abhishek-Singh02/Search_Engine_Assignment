@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+.ad_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
